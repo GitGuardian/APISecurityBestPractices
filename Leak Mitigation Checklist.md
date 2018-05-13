@@ -117,6 +117,8 @@ If you see any incorrect information, you are welcomed to [contribute](CONTRIBUT
 
 [DigitalOcean](#-digitalocean)
 
+[Google](#-google)
+
 [GitHub](#-github)
 
 [GitLab](#-gitlab)
@@ -157,7 +159,7 @@ You can revoke an API key from your [API keys dashboard](https://www.algolia.com
 
 Secured API keys can only be revoked by revoking their "parent" API key following the aboveprocedure for regular tokens.
 
-Revoking a parent key will revoke all its child keys. 
+Revoking a parent key will revoke all its child keys.
 
 ## <img src="icons/aws-logo.jpg" height="30" width="30" > AWS
 
@@ -208,6 +210,20 @@ Go to your [API dashboard](https://cloud.digitalocean.com/settings/api/tokens) a
 
 As far as we know, there is no way to check the last calls made with your API token. You can check your [security history dashboard](https://cloud.digitalocean.com/settings/security) or use [the actions API endpoint](https://developers.digitalocean.com/documentation/v2/#list-all-actions) to check a few actions performed on your account.  
 
+
+## <img src="icons/google-logo.jpg" height="30" width="30" > Google
+As stated [here](https://support.google.com/cloud/answer/6310037?hl=en) you should not store API key in application's source tree. There are some exceptions like
+Google Maps API key that sometimes need to be embedded in JS.
+API keys are distributed per project. There are two types of personal secrets: **API keys** and **Service account keys**, the deletion's process is the same and detailed below.
+### Revoke a key
+Go to the [credentials](https://console.cloud.google.com/apis/credentials) section of your project. Then select the corresponding API key and click on the delete button.
+
+### Check for suspicious activity
+
+Go your [dashboard](https://console.cloud.google.com/apis/dashboard) and
+look at the traffic of the different API's.
+
+
 ## <img src="icons/github-logo.png" height="30" width="30" > GitHub
 
 ### Revoke a key
@@ -232,13 +248,13 @@ You can find the file in `/var/log/gitlab/gitlab-rails` for Omnibus GitLab packa
 
 ## <img src="icons/heroku-logo.png" height="30" width="30" > Heroku
 
-Heroku API keys don't have scopes. They give full programmatic access to your account. 
+Heroku API keys don't have scopes. They give full programmatic access to your account.
 
 > Warning: we are not speaking about [Heroku Oauth](https://devcenter.heroku.com/articles/oauth) tokens which have [scopes](https://devcenter.heroku.com/articles/oauth#scopes). Oauth tokens are generated in the back-end and unlike API keys, they are used with a client id.
 
 ### Revoke a key
 
-To revoke your token go to your [account page](https://dashboard.heroku.com/account) under the "API Key" section, then click on ![regenerate API Key](icons/heroku-button.png). A new token will be issued. 
+To revoke your token go to your [account page](https://dashboard.heroku.com/account) under the "API Key" section, then click on ![regenerate API Key](icons/heroku-button.png). A new token will be issued.
 
 ## <img src="icons/hubspot-logo.jpg" height="30" width="30" > HubSpot
 
