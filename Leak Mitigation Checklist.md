@@ -212,17 +212,18 @@ As far as we know, there is no way to check the last calls made with your API to
 
 
 ## <img src="icons/google-logo.jpg" height="30" width="30" > Google
-As stated [here](https://support.google.com/cloud/answer/6310037?hl=en) you should not store API key in application's source tree. There are some exceptions like
-Google Maps API key that sometimes need to be embedded in JS.
-API keys are distributed per project. There are two types of personal secrets: **API keys** and **Service account keys**, the deletion's process is the same and detailed below.
+
+As stated [here](https://support.google.com/cloud/answer/6310037?hl=en) you should not store API keys in application's source tree. There are some exceptions like Google Maps API keys that sometimes need to be embedded in JS.
+
+API keys are distributed per project. There are two types of personal secrets: API keys and Service account keys, the deletion process is the same and detailed below.
+
 ### Revoke a key
+
 Go to the [credentials](https://console.cloud.google.com/apis/credentials) section of your project. Then select the corresponding API key and click on the delete button.
 
 ### Check for suspicious activity
 
-Go your [dashboard](https://console.cloud.google.com/apis/dashboard) and
-look at the traffic of the different API's.
-
+Go to your [dashboard](https://console.cloud.google.com/apis/dashboard) and look at the traffic of the different APIs.
 
 ## <img src="icons/github-logo.png" height="30" width="30" > GitHub
 
