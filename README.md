@@ -7,4 +7,4 @@ and secrets management in general.
 
 [1. Leak Mitigation Checklist](Leak%20Mitigation%20Checklist.md)
 
-[2. How to Contribute](Contributing.md)
+[2. How to Contribute](CONTRIBUTING.md)
