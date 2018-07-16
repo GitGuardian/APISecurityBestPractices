@@ -13,7 +13,7 @@ Examples of sensitive information:
 If someone else leaked confidential information related to you or your company on GitHub, you may ask GitHub to perform a [DMCA takedown](https://help.github.com/articles/dmca-takedown-policy/#f-submitting-notices).
 
 # Table of contents
-[0. How to avoid exposing sensitive information](#0-how-to-avoid-exposing-sensitive-information)
+[0. How to avoid exposing keys and sensitive information](#0-how-to-avoid-exposing-keys-and-sensitive-information)
 
 [1. General advice](#1-general-advice)
 
