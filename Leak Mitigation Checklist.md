@@ -30,6 +30,7 @@ If someone else leaked confidential information related to you or your company o
 [2. Advice specific to a key](#2-advice-specific-to-a-key)
 
 [3. Any question?](#3-any-question)
+
 # 0. How to avoid exposing keys and sensitive information
 Before your first push to a repo, add this simple step to your workflow, which should avoid you having to backtrack and endure the embarrassment. That step is to add a .gitignore file to your code before you push for the first time. The process is simple and will prevent headaches for you and other developers of your project in the future.
 
