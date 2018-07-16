@@ -34,13 +34,13 @@ If someone else leaked confidential information related to you or your company o
 # 0. How to avoid exposing keys and sensitive information
 Before your first push to a repo, add this simple step to your workflow, which should avoid you having to backtrack and endure the embarrassment. That step is to add a .gitignore file to your code before you push for the first time. The process is simple and will prevent headaches for you and other developers of your project in the future.
 
-# 0.1 Adding a .gitignore file to your code
+## 0.1 Adding a .gitignore file to your code
 Create a new file named .gitignore and save it in the root of your project. This can be done via the terminal or in Finder/Explorer/Linux file manager as needed. The file must have a dot before the "gitignore" part or it won't be recognized exactly like this: ".gitignore" (that is the entire file name, weird, I know, but it's magical).
 
-# 0.2 Add sensitive files to the list (in the .gitignore file)
+## 0.2 Add sensitive files to the list (in the .gitignore file)
 Since it is difficult to tell what every single developer might possibly name their key files and other secrets, it is easier if you add your specific files to the .gitignore file yourself. All you do is make an entry inside the .gitignore for each file that you don't want shared on the public internet as part of your source code. When you commit the .gitignore file, github automatically looks the other way, and will not include your sensitive files in the repo. It's almost like they planned it!
 
-# 0.3 Making your app still work when key files aren't pushed to the repo
+## 0.3 Making your app still work when key files aren't pushed to the repo
 A valid question might be "How do I still make my app work without the keys or other sensitive files?" The answer is copy key files to the server where the code is running (usually by hand) so that they stay safe. Typically you would transfer the key file to the server once you've cloned your git repo onto the server. This way, the app still runs and your secret information stays secure. No one ever seems to explain this concept to devs, thus the need for GitGuardian to step in and help keep you safe.
 
 # 1. General advice
