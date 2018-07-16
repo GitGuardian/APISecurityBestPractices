@@ -15,11 +15,11 @@ If someone else leaked confidential information related to you or your company o
 # Table of contents
 [0. How to avoid exposing keys and sensitive information](#0-how-to-avoid-exposing-keys-and-sensitive-information)
 
-* [0.1 Adding a .gitignore file to your code](#0.1-adding-a-gitignore-file-to-your-code)
+* [0.1 Adding a .gitignore file to your code](#01-adding-a-gitignore-file-to-your-code)
 
-* [0.2 Add sensitive files to the list](#0.2-add-sensitive-files-to-the-list)
+* [0.2 Add sensitive files to the list](#02-add-sensitive-files-to-the-list)
 
-* [0.3 Making your app work without keys in the code](#0.3-making-your-app-work-without-keys-in-the-code)
+* [0.3 Making your app work without keys in the code](#03-making-your-app-work-without-keys-in-the-code)
 
 [1. General advice](#1-general-advice)
 
