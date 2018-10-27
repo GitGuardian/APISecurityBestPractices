@@ -1,4 +1,4 @@
-# GitGuardian Documentation and Resources
+## GitGuardian Documentation and Resources
 
 This repository provides resources and documentation about leaks
 and secrets management in general.
