@@ -16,7 +16,7 @@ If someone else leaked confidential information related to you or your company o
 
 [1. General advice](#1-general-advice)
 
- * [1.1. :warning: First thing first: rotate your credentials](#11-warning-first-thing-first-rotate-your-credentials)
+ * [1.1. :warning: First things first: rotate your credentials](#11-warning-first-things-first-rotate-your-credentials)
 
  * [1.2. (Optional) Delete evidence of the leak](#12-optional-delete-evidence-of-the-leak)
 
@@ -32,7 +32,7 @@ If someone else leaked confidential information related to you or your company o
 
 # 1. General advice
 
-## 1.1. :warning: First thing first: rotate your credentials
+## 1.1. :warning: First things first: rotate your credentials
 
 > Warning: Once you have pushed a commit to GitHub, you should consider any data it contains to be compromised.
 > If you committed a password, change it! If you committed a key, generate a new one."
