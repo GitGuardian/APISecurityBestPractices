@@ -9,7 +9,7 @@ GitGuardian is a developers-first solution scanning GitHub activity in real-time
 
 Check out our [website](https://www.gitguardian.com).
 
-Check out our [blog](https://www.blog.gitguardian.com). 
+Check out our [blog](https://blog.gitguardian.com). 
 
 
 ## Table of contents
