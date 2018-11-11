@@ -16,7 +16,7 @@ If someone else leaked confidential information related to you or your company o
 
 [1. General advice](#1-general-advice)
 
- * [1.1. :warning: First thing first: rotate your credentials](#11-warning-first-thing-first-rotate-your-credentials)
+ * [1.1. :warning: First things first: rotate your credentials](#11-warning-first-things-first-rotate-your-credentials)
 
  * [1.2. (Optional) Delete evidence of the leak](#12-optional-delete-evidence-of-the-leak)
 
@@ -32,7 +32,7 @@ If someone else leaked confidential information related to you or your company o
 
 # 1. General advice
 
-## 1.1. :warning: First thing first: rotate your credentials
+## 1.1. :warning: First things first: rotate your credentials
 
 > Warning: Once you have pushed a commit to GitHub, you should consider any data it contains to be compromised.
 > If you committed a password, change it! If you committed a key, generate a new one."
@@ -52,7 +52,7 @@ Keep in mind that you have to update your application accordingly in order not t
 
 While you should first rotate your compromised credentials in all cases, you may wish to remove sensitive information from your git history as well. Remember that git is a versioning tool, which means that your commits history is searchable.
 
-This is especially important if you committed sensitive data that cannot be changed (like any user data) or if you want to preserve your company's brand reputation and not raise cybersecurity concerns. Keep in mind that the Web never forgets: GitHub offers a [public events API](https://developer.github.com/v3/activity/events/#list-public-events) that can be used by everyone to download public commits in real-time. But still we strongly advise to limit exposure of your sensitive information.
+This is especially important if you committed sensitive data that cannot be changed (like any user data) or if you want to preserve your company's brand reputation and not raise cybersecurity concerns. Keep in mind that the Web never forgets: GitHub offers a [public events API](https://developer.github.com/v3/activity/events/#list-public-events) that can be used by everyone to download public commits. But still we strongly advise to limit exposure of your sensitive information.
 
 ### 1.2.2 Detailed procedure
 
@@ -208,7 +208,7 @@ Go to your [API dashboard](https://cloud.digitalocean.com/settings/api/tokens) a
 
 ### Check for suspicious activity
 
-As far as we know, there is no way to check the last calls made with your API token. You can check your [security history dashboard](https://cloud.digitalocean.com/settings/security) or use [the actions API endpoint](https://developers.digitalocean.com/documentation/v2/#list-all-actions) to check a few actions performed on your account.  
+As far as we know, there is no way to check the last calls made with your API token. You can check your [security history dashboard](https://cloud.digitalocean.com/settings/security) or use [the actions API endpoint](https://developers.digitalocean.com/documentation/v2/#list-all-actions) to check a few actions performed on your account.
 
 
 ## <img src="icons/google-logo.jpg" height="30" width="30" > Google
@@ -311,7 +311,7 @@ There is an [audit logs api](https://api.slack.com/docs/audit-logs-api) which is
 
 The way to revoke a token depends on the way it was issued.
 
-Twilio names two different types of tokens:
+Twilio issues two different types of tokens:
 * "Auth tokens" that are root tokens you can find under your [project settings](https://www.twilio.com/console/project/settings)
 * "API keys" you can find in the [runtime panel](https://www.twilio.com/console/runtime/api-keys).
 
@@ -351,4 +351,4 @@ Go to your [application settings](https://twitter.com/settings/applications) and
 
 # 3. Any question?
 
-If something is not clear to you, it may not be clear for someone else too. Open an issue and let's discuss together! :smile:
+If something is not clear to you, it may not be clear for someone else either. Open an issue and let's discuss together! :smile:
