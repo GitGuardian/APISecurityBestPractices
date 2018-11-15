@@ -1,7 +1,6 @@
 # GitGuardian Documentation and Resources
 
-This repository provides resources and documentation about leaks
-and secrets management in general.
+This repository provides resources to help you keep secrets out of source code. 
 
 ## About GitGuardian
 
