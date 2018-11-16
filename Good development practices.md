@@ -1,6 +1,6 @@
 # Good development practices
 
-Good development practices can help reduce the risks of leaking a secret. 
+Good development practices to help reduce the risks of leaking a secret. 
 
 ## Avoid git add * commands
 
