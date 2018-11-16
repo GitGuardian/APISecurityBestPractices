@@ -90,4 +90,4 @@ Don't encourage copy-pasting secrets in multiple places. This increases the surf
 
 Keep in mind that why the good development practices exposed above help you reduce the risk of leak, none of these actually prevent your secrets from being pushed to GitHub. Because good development practices are sometimes ignored. 
 
-We are the authors of a GitHub scanning tool called [GitGuardian](https://www.gitguardian.com).
+We are the authors of a GitHub scanning tool called [GitGuardian](https://www.gitguardian.com/?ref=github).
