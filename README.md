@@ -14,6 +14,6 @@ This repository provides resources to help you keep secrets out of source code.
 
 GitGuardian is a developers-first solution scanning GitHub activity in real-time for API secret tokens, database credentials, certificates, ... Be alerted before the git process returns control back to your terminal. :blush:
 
-Check out our [website](https://www.gitguardian.com).
+Check out our [website](https://www.gitguardian.com/?ref=github).
 
-Check out our [blog](https://blog.gitguardian.com). 
+Check out our [blog](https://blog.gitguardian.com/?ref=github). 
