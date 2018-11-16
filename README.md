@@ -15,4 +15,6 @@ Check out our [blog](https://blog.gitguardian.com).
 
 [1. Leak Mitigation Checklist](Leak%20Mitigation%20Checklist.md)
 
-[2. How to Contribute](CONTRIBUTING.md)
+[2. Good development practices](Good%20development%20practices.md)
+
+[3. How to Contribute](CONTRIBUTING.md)
