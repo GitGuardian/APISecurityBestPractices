@@ -68,7 +68,7 @@ The main disadvantage of these solutions is the cost of adoption. Their overhead
 
 Some API providers make it possible to issue credentials with an expiration date.
 
-## Whitelisting your IPs
+## Whitelist your IPs
 For some API providers you can add an extra layer of security by whitelisting your organization's IP addresses.
 
 ## Restrict permissions associated with your keys
