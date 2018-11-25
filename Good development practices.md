@@ -2,6 +2,21 @@
 
 Good development practices to help reduce the risks of leaking a secret.
 
+## Table of contents
+
+  * [Avoid git add * commands](#avoid-git-add--commands)
+  * [Name sensitive files in .gitignore and .npmignore](#name-sensitive-files-in-gitignore-and-npmignore)
+  * [Store your secrets in a safer place](#store-your-secrets-in-a-safer-place)
+    + [Use local environment variables, when feasible](#use-local-environment-variables-when-feasible)
+    + [Store your secrets encrypted in a git repository](#store-your-secrets-encrypted-in-a-git-repository)
+    + [Use a "secrets as a service" solution](#use-a-secrets-as-a-service-solution)
+  * [Use temporary credentials](#use-temporary-credentials)
+  * [Whitelist your IPs](#whitelist-your-ips)
+  * [Restrict permissions associated with your keys](#restrict-permissions-associated-with-your-keys)
+  * [Protect your development / testing secrets as well as your production secrets](#protect-your-development--testing-secrets-as-well-as-your-production-secrets)
+  * [Don't share secrets over emails, Slack, Skype, etc.](#dont-share-secrets-over-emails-slack-skype-etc)
+  * [Use GitHub scanning tools](#use-github-scanning-tools)
+  
 ## Avoid git add * commands
 
 Using wildcards can easily capture files you do not want to share.
