@@ -1,6 +1,6 @@
 # Good development practices
 
-Good development practices to help reduce the risks of leaking a secret.
+Good development practices to reduce the risks of leaking a secret.
 
 ## Table of contents
 
