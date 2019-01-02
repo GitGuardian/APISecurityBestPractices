@@ -38,13 +38,13 @@ If someone else leaked confidential information related to you or your company o
 > If you committed a password, change it! If you committed a key, generate a new one."
 > ([Advice from GitHub :octocat: ](https://help.github.com/articles/removing-sensitive-data-from-a-repository/))
 
-If you have pushed an API key, your first step should be to immediatly revoke the compromised token.
+If you have pushed an API key, your first step should be to immediately revoke the compromised token.
 
 It will NOT be enough to delete sensitive information in source code and commit changes or even purge your repository's history.
 
 Keep in mind that you have to update your application accordingly in order not to break it. If your credentials are used by other developers or deployed in your infrastructure, make sure they all get a new version of it.
 
-**If you are a junior developer, we highly recommend that you talk to your lead developer or to the security guy. It's OK to make mistakes. Recognizing a mistake is the best way to show how much you care.**
+**If you are a junior developer, we highly recommend that you talk to your lead developer or the security guy. It's OK to make mistakes. Recognizing a mistake is the best way to show how much you care.**
 
 ## 1.2. (Optional) Delete evidence of the leak
 
@@ -52,11 +52,11 @@ Keep in mind that you have to update your application accordingly in order not t
 
 While you should first rotate your compromised credentials in all cases, you may wish to remove sensitive information from your git history as well. Remember that git is a versioning tool, which means that your commits history is searchable.
 
-This is especially important if you committed sensitive data that cannot be changed (like any user data) or if you want to preserve your company's brand reputation and not raise cybersecurity concerns. Keep in mind that the Web never forgets: GitHub offers a [public events API](https://developer.github.com/v3/activity/events/#list-public-events) that can be used by everyone to download public commits. But still we strongly advise to limit exposure of your sensitive information.
+This is especially important if you committed sensitive data that cannot be changed (like any user data) or if you want to preserve your company's brand reputation and not raise cybersecurity concerns. Keep in mind that the Web never forgets: GitHub offers a [public events API](https://developer.github.com/v3/activity/events/#list-public-events) that can be used by everyone to download public commits. But still, we strongly advise limiting exposure of your sensitive information.
 
 ### 1.2.2 Detailed procedure
 
-The procedure of rewriting git history can be a bit tricky but this is a very good opportunity to learn about a few subtleties of the git protocol. Under its appearance of simplicity, the git protocol generally takes years for developers to be profoundly understood! So don't worry if you're a bit uncomfortable with it, and let's practice a little! :smile:
+The procedure of rewriting git history can be a bit tricky, but this is a very good opportunity to learn about a few subtleties of the git protocol. Under its appearance of simplicity, the git protocol generally takes years for developers to be profoundly understood! So don't worry if you're a bit uncomfortable with it, and let's practice a little! :smile:
 
 <details>
   <summary><b>Click to expand</b></summary>
@@ -97,7 +97,7 @@ Create a new repository and push it back. Make sure everybody deleted old clones
 
 It is a good idea to review the log data to see if there was some suspicious activity.
 
-Some secrets can lead to other secrets. For example, Slack tokens can give accesss to messages and shared files generally containing other secrets. GitHub tokens can give access to private repositories also containing secrets.
+Some secrets can lead to other secrets. For example, Slack tokens can give access to messages and shared files generally containing other secrets. GitHub tokens can give access to private repositories also containing secrets.
 
 Depending on your findings, if part of your infrastructure or data has been further exposed, you may need to take additional mitigation actions.
 
@@ -149,7 +149,7 @@ Keys can be revoked on the [Access Key Management page](https://ak-console.aliyu
 
 The way to revoke a token depends on its type. There are two types of tokens:
 * Regular API keys. These keys can be created from the dashboard.
-* "Secured" API keys. These keys are used to allow users to see a filtered view of an index (useful when the index contains data data from many users). They cannot be created from the dashboard. Instead they must be generated at the API level (from your back-end). Such keys must be generated from any regular key (except the admin key) with a search scope (called the "parent key").
+* "Secured" API keys. These keys are used to allow users to see a filtered view of an index (useful when the index contains data from many users). They cannot be created from the dashboard. Instead, they must be generated at the API level (from your back-end). Such keys must be generated from any regular key (except the admin key) with a search scope (called the "parent key").
 
 #### Your token is regular
 
@@ -157,7 +157,7 @@ You can revoke an API key from your [API keys dashboard](https://www.algolia.com
 
 #### Your token is "secured"
 
-Secured API keys can only be revoked by revoking their "parent" API key following the aboveprocedure for regular tokens.
+Secured API keys can only be revoked by revoking their "parent" API key following the above procedure for regular tokens.
 
 Revoking a parent key will revoke all its child keys.
 
@@ -175,7 +175,7 @@ Sign in to the [AWS Management Console](https://console.aws.amazon.com/) as the 
 
 Expand the "Access keys" section then click on the ![delete](icons/aws2.png) button.
 
-The difference between the ![delete](icons/aws2.png) button and the ![make inactive](icons/aws3.png) button is that disabled keys can be reenabled later, which should not be the case here.
+The difference between the ![delete](icons/aws2.png) button and the ![make inactive](icons/aws3.png) button is that disabled keys can be re-enabled later, which should not be the case here.
 
 #### The token was issued for an IAM user
 
@@ -213,7 +213,7 @@ As far as we know, there is no way to check the last calls made with your API to
 
 ## <img src="icons/google-logo.jpg" height="30" width="30" > Google
 
-As stated [here](https://support.google.com/cloud/answer/6310037?hl=en) you should not store API keys in application's source tree. There are some exceptions like Google Maps API keys that sometimes need to be embedded in JS.
+As stated [here](https://support.google.com/cloud/answer/6310037?hl=en) you should not store API keys in the application's source tree. There are some exceptions like Google Maps API keys that sometimes need to be embedded in JS.
 
 API keys are distributed per project. There are two types of personal secrets: API keys and Service account keys, the deletion process is the same and detailed below.
 
@@ -233,7 +233,7 @@ Visit your [access tokens panel](https://github.com/settings/tokens) under your 
 
 ### Check for suspicious activity
 
-As far as we know, there is no way to check the last calls made with your API token. But GitHub offers the possibility to [review some security logs](https://help.github.com/articles/reviewing-your-security-log/). This is better than nothing but this won't tell you if someone was able to access your private repositories for example.
+As far as we know, there is no way to check the last calls made with your API token. But GitHub offers the possibility to [review some security logs](https://help.github.com/articles/reviewing-your-security-log/). This is better than nothing, but this won't tell you if someone was able to access your private repositories for example.
 
 ## <img src="icons/gitlab-logo.jpg" height="30" width="30" > GitLab
 
@@ -251,7 +251,7 @@ You can find the file in `/var/log/gitlab/gitlab-rails` for Omnibus GitLab packa
 
 Heroku API keys don't have scopes. They give full programmatic access to your account.
 
-> Warning: we are not speaking about [Heroku Oauth](https://devcenter.heroku.com/articles/oauth) tokens which have [scopes](https://devcenter.heroku.com/articles/oauth#scopes). Oauth tokens are generated in the back-end and unlike API keys, they are used with a client id.
+> Warning: we are not speaking about [Heroku OAuth](https://devcenter.heroku.com/articles/oauth) tokens which have [scopes](https://devcenter.heroku.com/articles/oauth#scopes). OAuth tokens are generated in the back-end, and unlike API keys, they are used with a client id.
 
 ### Revoke a key
 
@@ -271,7 +271,7 @@ Then go to the "HubSpot API key" tab then click ![show key](icons/hubspot2.png) 
 
 ## <img src="icons/mailgun-logo.png" height="30" width="30" > Mailgun
 
-Mailgun tokens give access to your mailing lists and your logs of sent emails. They allow to send emails with your configured [domain names](https://app.mailgun.com/app/domains).
+Mailgun tokens give access to your mailing lists and your logs of sent emails. They allow sending emails with your configured [domain names](https://app.mailgun.com/app/domains).
 
 ### Revoke a key
 
@@ -295,7 +295,7 @@ As far as we know, there is no way to check if an API key was used or not. The o
 
 ### Revoke a key
 
-Slack tokens are very convenient because the have the power to revoke themselves thanks to the [auth.revoke API method](https://api.slack.com/methods/auth.revoke)! Easy as a command line:
+Slack tokens are very convenient because they have the power to revoke themselves thanks to the [auth.revoke API method](https://api.slack.com/methods/auth.revoke)! Easy as a command line:
 
 ```
 curl "https://slack.com/api/auth.revoke?token=xoxp-YOUR-TOKEN-HERE"
@@ -303,7 +303,7 @@ curl "https://slack.com/api/auth.revoke?token=xoxp-YOUR-TOKEN-HERE"
 
 ### Check for suspicious activity
 
-There is an [audit logs api](https://api.slack.com/docs/audit-logs-api) which is only available to [Enterprise Grid](https://api.slack.com/enterprise-grid) customers.
+There is an [audit logs API](https://api.slack.com/docs/audit-logs-api) which is only available to [Enterprise Grid](https://api.slack.com/enterprise-grid) customers.
 
 ## <img src="icons/twilio-logo.jpg" height="30" width="30" > Twilio
 
