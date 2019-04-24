@@ -10,7 +10,7 @@ See an example (Slack) below.
 
 ### Revoke a key
 
-Slack tokens are very convenient because the have the power to revoke themselves thanks to the [auth.revoke API method](https://api.slack.com/methods/auth.revoke)! Easy as a command line:
+Slack tokens are very convenient because they have the power to revoke themselves thanks to the [auth.revoke API method](https://api.slack.com/methods/auth.revoke)! Easy as a command line:
 
 ```
 curl "https://slack.com/api/auth.revoke?token=xoxp-YOUR-TOKEN-HERE"
