@@ -44,7 +44,7 @@ It will NOT be enough to delete sensitive information in source code and commit 
 
 Keep in mind that you have to update your application accordingly in order not to break it. If your credentials are used by other developers or deployed in your infrastructure, make sure they all get a new version of it.
 
-**If you are a junior developer, we highly recommend that you talk to your lead developer or the security guy. It's OK to make mistakes. Recognizing a mistake is the best way to show how much you care.**
+**If you are a junior developer, we highly recommend that you talk to your lead developer or to the person responsible for security. It's OK to make mistakes. Recognizing a mistake is the best way to show how much you care.**
 
 ## 1.2. (Optional) Delete evidence of the leak
 
