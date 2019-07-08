@@ -1,12 +1,27 @@
 # Good development practices
 
-Good development practices to help reduce the risks of leaking a secret.
+Good development practices to reduce the risks of leaking a secret.
 
+## Table of contents
+
+  * [Avoid git add * commands](#avoid-git-add--commands)
+  * [Name sensitive files in .gitignore and .npmignore](#name-sensitive-files-in-gitignore-and-npmignore)
+  * [Store your secrets in a safer place](#store-your-secrets-in-a-safer-place)
+    + [Use local environment variables, when feasible](#use-local-environment-variables-when-feasible)
+    + [Store your secrets encrypted in a git repository](#store-your-secrets-encrypted-in-a-git-repository)
+    + [Use a "secrets as a service" solution](#use-a-secrets-as-a-service-solution)
+  * [Use temporary credentials](#use-temporary-credentials)
+  * [Whitelist your IPs](#whitelist-your-ips)
+  * [Restrict permissions associated with your keys](#restrict-permissions-associated-with-your-keys)
+  * [Protect your development / testing secrets as well as your production secrets](#protect-your-development--testing-secrets-as-well-as-your-production-secrets)
+  * [Don't share secrets over emails, Slack, Skype, etc.](#dont-share-secrets-over-emails-slack-skype-etc)
+  * [Use GitHub scanning tools](#use-github-scanning-tools)
+  
 ## Avoid git add * commands
 
 Using wildcards can easily capture files you do not want to share.
 
-Instead of wildcards, name each file you want to add, for example: `git add README.MD`. Before committing your changes, use `git status` command to list track and untracked files. When you commit with `git commit`, your untracked files will not end up in source control.
+Instead of wildcards, name each file you want to add, for example, `git add README.MD`. Before committing your changes, use `git status` command to list track and untracked files. When you commit with `git commit`, your untracked files will not end up in source control.
 
 ## Name sensitive files in .gitignore and .npmignore
 
@@ -43,11 +58,11 @@ This approach may not be feasible at scale because there is no way to easily kee
 **Disadvantages**
 
 * You have to deal with your encryption keys securely.
-* No audit logs. Your .git repos will be cloned by multiple developers, applications or servers. Soon your secrets will spread your organization and you will lose track of where they are and who has acces to them.
-* No groups that let you easily specifiy permissions for multiple users.
-* Hard to rotate an access. Rotating an access implies to revoke the key and redistribute it. The distribution part is not easy to handle with git repositories.
+* No audit logs. Your .git repos will be cloned by multiple developers, applications or servers. Soon your secrets will spread your organization, and you will lose track of where they are and who has access to them.
+* No groups that let you easily specify permissions for multiple users.
+* Hard to rotate access. Rotating access implies to revoke the key and redistribute it. The distribution part is not easy to handle with git repositories.
 
-### Use a "secrets as a service" solution
+### Use "secrets as a service" solution
 
 There are secrets management services like [Hashicorp's Vault](https://www.vaultproject.io/) or [Square's Keywhiz](https://square.github.io/keywhiz/).
 
@@ -68,29 +83,29 @@ The main disadvantage of these solutions is the cost of adoption. Their overhead
 
 Some API providers make it possible to issue credentials with an expiration date.
 
-## Whitelisting your IPs
-For some API providers you can add an extra layer of security by whitelisting your organization's IP addresses.
+## Whitelist your IPs
+For some API providers, you can add an extra layer of security by whitelisting your organization's IP addresses.
 
 ## Restrict permissions associated with your keys
 
-It is very rare to have to generate root access keys (with full permissions). Some API providers allow granular permissions to their endpoints, enable read / write splitting or role-based access control.
+It is very rare to have to generate root access keys (with full permissions). Some API providers allow granular permissions to their endpoints, enable read/write splitting or role-based access control.
 
-A rule of thumb : accesses should be granted on a need-to-know basis only.
+A rule of thumb: accesses should be granted on a need-to-know basis only.
 
-## Protect your development / testing secrets as well as your production secrets
+## Protect your development/testing secrets as well as your production secrets
 
-This is a common mistake. The line is not clear between development, testing and production secrets. Production secrets can end up in development / testing and vice versa.
+This is a common mistake. The line is not clear between development, testing, and production secrets. Production secrets can end up in development/testing and vice versa.
 
 ## Don't share secrets over emails, Slack, Skype, etc.
 
 Yes, these services were designed to keep your conversations private. No, they were not designed to store your secrets in plain text.
 
-Ever had one of these long email conversations forwarded to you with information that was not meant to be shared buried in the thread ?
+Ever had one of these long email conversations forwarded to you with information that was not meant to be shared buried in the thread?
 
 Don't encourage copy-pasting secrets in multiple places. This increases the surface area for hacks.
 
 ## Use GitHub scanning tools
 
-Keep in mind that why the good development practices exposed above help you reduce the risk of leak, none of these actually prevent your secrets from being pushed to GitHub. Because good development practices are sometimes ignored.
+Keep in mind that why the good development practices exposed above help you reduce the risk of a leak, none of these actually prevent your secrets from being pushed to GitHub. Because good development practices are sometimes ignored.
 
 We are the authors of a GitHub scanning tool called [GitGuardian](https://www.gitguardian.com/?ref=github).

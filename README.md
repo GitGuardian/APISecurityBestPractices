@@ -1,6 +1,6 @@
 # GitGuardian Documentation and Resources
 
-This repository provides resources to help you keep secrets out of source code. 
+This repository provides resources for developers to keep their secrets secret. 
 
 ## Table of contents
 
